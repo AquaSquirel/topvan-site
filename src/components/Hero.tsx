@@ -3,9 +3,10 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
-        {/* Usando uma imagem que remete a uma Sprinter preta ou interior de luxo */}
-        <div className="w-full h-full bg-[url('https://i.imgur.com/GKUhKm8.jpeg?q=80&w=2071&auto=format&fit=crop')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent z-10" />
+        <div 
+          className="w-full h-full bg-[url('https://i.imgur.com/GKUhKm8.jpeg')] bg-cover bg-[80%_center]" 
+        />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
