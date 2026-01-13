@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Topvan | Transporte Executivo",
-  description: "Transporte universitário e escolar diário entre Piedade e Sorocaba. Aluguel de vans executivas (Mercedes Sprinter) para turismo e eventos. Fundada por Juliano Amaral.",
+  description: "Transporte com vans executivas para turismo, eventos, transporte escolar e universitário. Fundada por Juliano Amaral.",
 };
 
 export default function RootLayout({
