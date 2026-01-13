@@ -13,55 +13,59 @@ const DailyRoutes = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Manhã */}
           <div className="bg-gradient-to-br from-zinc-900 to-black p-8 rounded-3xl border border-zinc-800 relative group hover:border-gold-400/30 transition-all">
-            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500">
+            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500 z-0">
               <span className="text-6xl inline-block transition-transform group-hover:scale-110 duration-500">☀️</span>
             </div>
-            <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
-              <span className="text-gold-400">01.</span> Período da Manhã
-            </h4>
-            <p className="text-gray-400 mb-6 font-medium">Foco em Escolas (Centro de Sorocaba)</p>
-            
-            <ul className="space-y-3">
-              {[
-                "Colégio Ser", "Objetivo", "Anglo", "Etec Fernando Prestes", 
-                "Etec Rubens de Faria", "Fadi", "Fefiso", "IFSP Sorocaba"
-              ].map((school, i) => (
-                <li key={i} className="flex items-center gap-3 text-gray-300">
-                  <svg className="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
-                  {school}
+            <div className="relative z-10">
+              <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+                <span className="text-gold-400">01.</span> Período da Manhã
+              </h4>
+              <p className="text-gray-400 mb-6 font-medium">Foco em Escolas (Centro de Sorocaba)</p>
+              
+              <ul className="space-y-3">
+                {[
+                  "Colégio Ser", "Objetivo", "Anglo", "Etec Fernando Prestes", 
+                  "Etec Rubens de Faria", "Fadi", "Fefiso", "IFSP Sorocaba"
+                ].map((school, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-300">
+                    <svg className="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+                    {school}
+                  </li>
+                ))}
+                <li className="flex items-center gap-3 text-gray-500 italic text-sm mt-2">
+                  + Outras escolas da região central
                 </li>
-              ))}
-              <li className="flex items-center gap-3 text-gray-500 italic text-sm mt-2">
-                + Outras escolas da região central
-              </li>
-            </ul>
+              </ul>
+            </div>
           </div>
 
           {/* Noite */}
           <div className="bg-gradient-to-br from-zinc-900 to-black p-8 rounded-3xl border border-zinc-800 relative group hover:border-gold-400/30 transition-all">
-            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500">
+            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500 z-0">
               <span className="text-6xl inline-block transition-transform group-hover:scale-110 duration-500">🌙</span>
             </div>
-            <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
-              <span className="text-gold-400">02.</span> Período da Noite
-            </h4>
-            <p className="text-gray-400 mb-6 font-medium">Foco em Universidades</p>
-            
-            <ul className="space-y-3">
-              {[
-                "Uniso", "Anhanguera", "Unip", "Facens", "Fatec"
-              ].map((uni, i) => (
-                <li key={i} className="flex items-center gap-3 text-gray-300">
-                  <svg className="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
-                  {uni}
-                </li>
-              ))}
-            </ul>
-            
-            <div className="mt-8 p-4 bg-gold-400/10 rounded-xl border border-gold-400/20">
-              <p className="text-gold-400 text-sm text-center font-semibold">
-                Retorno seguro garantido após o término das aulas.
-              </p>
+            <div className="relative z-10">
+              <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+                <span className="text-gold-400">02.</span> Período da Noite
+              </h4>
+              <p className="text-gray-400 mb-6 font-medium">Foco em Universidades</p>
+              
+              <ul className="space-y-3">
+                {[
+                  "Uniso", "Anhanguera", "Unip", "Facens", "Fatec"
+                ].map((uni, i) => (
+                  <li key={i} className="flex items-center gap-3 text-gray-300">
+                    <svg className="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/></svg>
+                    {uni}
+                  </li>
+                ))}
+              </ul>
+              
+              <div className="mt-8 p-4 bg-gold-400/10 rounded-xl border border-gold-400/20">
+                <p className="text-gold-400 text-sm text-center font-semibold">
+                  Retorno seguro garantido após o término das aulas.
+                </p>
+              </div>
             </div>
           </div>
         </div>

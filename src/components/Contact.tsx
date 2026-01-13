@@ -14,7 +14,11 @@ const Contact = () => {
     e.preventDefault();
     
     const phoneNumber = "5515996284505";
-    let text = `Olá! Gostaria de um orçamento da Topvan.%0A%0A*Nome:* ${formData.name}%0A*Data:* ${formData.date}%0A*Trajeto:* ${formData.route}`;
+    
+    // Formata a data de yyyy-mm-dd para dd/mm/yyyy
+    const formattedDate = formData.date.split('-').reverse().join('/');
+    
+    let text = `Olá! Gostaria de um orçamento da Topvan.%0A%0A*Nome:* ${formData.name}%0A*Data:* ${formattedDate}%0A*Trajeto:* ${formData.route}`;
     
     if (formData.message.trim()) {
       text += `%0A*Mensagem:* ${formData.message}`;
