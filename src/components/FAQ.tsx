@@ -10,7 +10,7 @@ const FAQ = () => {
     },
     {
       question: "Quais são as formas de pagamento?",
-      answer: "Trabalhamos com mensalidades via PIX, facilitando o controle financeiro dos pais e estudantes."
+      answer: "Trabalhamos com mensalidades via PIX ou Dinheiro, facilitando o controle financeiro dos passageiros."
     },
     {
       question: "Como funciona para eventos e turismo?",
