@@ -26,7 +26,7 @@ const Navbar = () => {
             <img 
               src="/TopVan.svg" 
               alt="Topvan Logo" 
-              className="h-20 w-auto object-contain py-2"
+              className="h-18 w-auto object-contain py-2"
             />
           </div>
 

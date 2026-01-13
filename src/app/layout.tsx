@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -7,9 +7,16 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
+
 export const metadata: Metadata = {
   title: "Topvan | Transporte Executivo Piedade - Sorocaba",
   description: "Transporte universitário e escolar diário entre Piedade e Sorocaba. Aluguel de vans executivas (Mercedes Sprinter) para turismo e eventos. Fundada por Juliano Amaral.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
