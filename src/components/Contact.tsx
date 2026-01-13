@@ -14,7 +14,11 @@ const Contact = () => {
     e.preventDefault();
     
     const phoneNumber = "5515996284505";
-    const text = `Olá! Gostaria de um orçamento da Topvan.%0A%0A*Nome:* ${formData.name}%0A*Data:* ${formData.date}%0A*Trajeto:* ${formData.route}%0A*Mensagem:* ${formData.message}`;
+    let text = `Olá! Gostaria de um orçamento da Topvan.%0A%0A*Nome:* ${formData.name}%0A*Data:* ${formData.date}%0A*Trajeto:* ${formData.route}`;
+    
+    if (formData.message.trim()) {
+      text += `%0A*Mensagem:* ${formData.message}`;
+    }
     
     window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
   };
@@ -56,7 +60,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold">E-mail</h4>
-                  <p className="text-gray-400">contato@topvan.com.br</p>
+                  <p className="text-gray-400">j.topvan10@gmail.com.br</p>
                 </div>
               </div>
 
@@ -66,7 +70,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold">Localização</h4>
-                  <p className="text-gray-400">Sorocaba, SP - Atendemos toda a região</p>
+                  <p className="text-gray-400">Piedade, SP - Atendemos toda a região</p>
                 </div>
               </div>
             </div>
@@ -76,7 +80,7 @@ const Contact = () => {
           <div className="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-bold text-gray-400 mb-2">Nome Completo</label>
+                <label className="block text-sm font-bold text-gray-400 mb-2">Nome</label>
                 <input 
                   type="text" 
                   name="name"
@@ -89,26 +93,28 @@ const Contact = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-bold text-gray-400 mb-2">Data da Viagem / Início</label>
+                <label className="block text-sm font-bold text-gray-400 mb-2">Data da Viagem / Início das Aulas</label>
                 <input 
-                  type="date" 
+                  type="date"
                   name="date"
+                  id="dateInput"
                   value={formData.date}
                   onChange={handleChange}
-                  className="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-gold-400 outline-none transition-all"
+                  onClick={(e) => e.currentTarget.showPicker()}
+                  className={`w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all cursor-pointer ${formData.date ? 'text-white' : 'text-gray-500'}`}
                   required 
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-gray-400 mb-2">Origem e Destino (ou Escola/Faculdade)</label>
+                <label className="block text-sm font-bold text-gray-400 mb-2">Destino (ou Escola/Faculdade)</label>
                 <input 
                   type="text" 
                   name="route"
                   value={formData.route}
                   onChange={handleChange}
                   className="w-full bg-black border border-zinc-800 rounded-xl px-4 py-3 text-white focus:border-gold-400 outline-none transition-all" 
-                  placeholder="Ex: Minha casa para Uniso"
+                  placeholder="Ex: Aparecida, Uniso..."
                   required 
                 />
               </div>

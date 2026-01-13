@@ -3,22 +3,22 @@ const Tourism = () => {
     {
       title: "Aparecida do Norte",
       description: "Romarias e viagens religiosas com conforto absoluto para o grupo.",
-      image: "https://images.unsplash.com/photo-1621886866687-b9c1d0f5076e?q=80&w=2070&auto=format&fit=crop"
+      image: "https://i.imgur.com/s8ApW6b.jpeg?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      title: "Holambra",
-      description: "Encante-se com a cidade das flores em uma viagem tranquila e segura.",
-      image: "https://images.unsplash.com/photo-1594411124675-c99e900995c6?q=80&w=2070&auto=format&fit=crop"
+      title: "Cotia",
+      description: "Igreja dos Arautos do Evangelho.",
+      image: "https://cdn.discordapp.com/attachments/979480647074730014/1460448160781570102/SaveClip.App_581811132_17991113864893192_2226366824009180383_n.jpg?ex=6966f3d7&is=6965a257&hm=d30f48bc6a3ef171122d478f0e3e597f43f42ff07f648aac2d89969134885891&?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      title: "Campos do Jordão",
-      description: "O clima da montanha com o transporte mais confortável da região.",
-      image: "https://images.unsplash.com/photo-1590059908848-18e9766942c7?q=80&w=2070&auto=format&fit=crop"
+      title: "Eventos Esportivos",
+      description: "São Bernardo do Campo, com a equipe do Kaikan de Piedade.",
+      image: "https://i.imgur.com/o99sYZi.jpeg?q=80&w=2070&auto=format&fit=crop"
     },
     {
-      title: "Litoral e Praias",
-      description: "Viagens para a praia com espaço de sobra para bagagens e família.",
-      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop"
+      title: "Parques Aquaticos",
+      description: "Castelo Park Aquatico, Cesário Lange.",
+      image: "https://i.imgur.com/iuMgL2J.jpeg"
     }
   ];
 
@@ -48,11 +48,17 @@ const Tourism = () => {
                 alt={place.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-6 z-20 bg-gradient-to-t from-black via-black/80 to-transparent">
-                <h4 className="text-xl font-bold text-white mb-2">{place.title}</h4>
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  {place.description}
-                </p>
+              <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+                <div>
+                  <h4 className="text-xl font-bold text-white mb-1">
+                    {place.title}
+                  </h4>
+                  <div className="max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-500 ease-in-out">
+                    <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                      {place.description}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

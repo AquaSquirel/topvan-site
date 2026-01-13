@@ -34,8 +34,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-zinc-900 text-center text-gray-600 text-xs">
-          &copy; {new Date().getFullYear()} Topvan. Todos os direitos reservados.
+        <div className="mt-12 pt-8 border-t border-zinc-900 text-center text-gray-600 text-xs flex flex-col items-center gap-2">
+          <p>&copy; {new Date().getFullYear()} Topvan. Todos os direitos reservados.</p>
+          <p>
+            Desenvolvido por{" "}
+            <a 
+              href="https://mateuss.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-white transition-colors underline decoration-gold-400/30 underline-offset-4"
+            >
+              Mateus Sonnenberg
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -23,7 +23,11 @@
   --background: #000000;
   --foreground: #ffffff;
   --primary: #d4af37;
-  color-scheme: dark; /* Força controles nativos (calendário, scrollbar) para modo escuro */
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

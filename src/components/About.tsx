@@ -7,7 +7,7 @@ const About = () => {
              <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden border border-gold-400/20 grayscale hover:grayscale-0 transition-all duration-700">
                   <img 
-                    src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2070&auto=format&fit=crop" 
+                    src="https://i.imgur.com/2omtrY3.jpeg?q=80&w=2070&auto=format&fit=crop" 
                     alt="Motorista Profissional" 
                     className="w-full h-full object-cover"
                   />

@@ -47,6 +47,12 @@ const Fleet = () => {
                 </div>
               </div>
             </div>
+
+            <div className="mt-8">
+              <a href="#contato" className="inline-block border border-gold-400 text-gold-400 font-bold px-8 py-3 rounded-full hover:bg-gold-400 hover:text-black transition-all">
+                Quero viajar nessa Van
+              </a>
+            </div>
           </div>
 
           <div className="relative">
