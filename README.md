@@ -32,7 +32,7 @@ O design segue uma estética **Premium/Executiva**:
 
 1.  Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/topvan-site.git
+    git clone https://github.com/aquasquirel/topvan-site.git
     ```
 
 2.  Instale as dependências:
