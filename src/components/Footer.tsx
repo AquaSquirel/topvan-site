@@ -5,17 +5,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           
           {/* Brand */}
-          <div className="flex flex-col items-center md:items-start">
-            <span className="text-2xl font-bold tracking-tighter text-gold-400 mb-4">
-              TOP<span className="text-white">VAN</span>
-            </span>
-            <p className="text-gray-500 text-sm max-w-xs">
+          <div className="flex flex-col items-center md:items-start w-full">
+            <div className="w-full flex justify-center md:justify-start mb-4">
+              <img 
+                src="/TopVan.svg" 
+                alt="Topvan Logo" 
+                className="h-24 w-auto object-contain"
+              />
+            </div>
+            <p className="text-gray-500 text-sm max-w-xs text-center md:text-left">
               Especialista em transporte executivo e universitário na rota Piedade - Sorocaba.
             </p>
           </div>
 
           {/* Legal */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center items-center md:items-start">
             <h4 className="text-white font-bold mb-4">Dados da Empresa</h4>
             <p className="text-gray-500 text-sm mb-2">TOPVAN LOCADORA DE VEICULOS LTDA</p>
             <p className="text-gray-500 text-sm mb-2">CNPJ: 23.928.576/0001-19</p>

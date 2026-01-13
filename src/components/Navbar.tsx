@@ -23,9 +23,11 @@ const Navbar = () => {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <span className="text-2xl font-bold tracking-tighter text-gold-400">
-              TOP<span className="text-white">VAN</span>
-            </span>
+            <img 
+              src="/TopVan.svg" 
+              alt="Topvan Logo" 
+              className="h-20 w-auto object-contain py-2"
+            />
           </div>
 
           {/* Desktop Menu */}

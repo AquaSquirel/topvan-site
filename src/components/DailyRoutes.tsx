@@ -13,8 +13,8 @@ const DailyRoutes = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Manhã */}
           <div className="bg-gradient-to-br from-zinc-900 to-black p-8 rounded-3xl border border-zinc-800 relative group hover:border-gold-400/30 transition-all">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span className="text-6xl">☀️</span>
+            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500">
+              <span className="text-6xl inline-block transition-transform group-hover:scale-110 duration-500">☀️</span>
             </div>
             <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
               <span className="text-gold-400">01.</span> Período da Manhã
@@ -39,8 +39,8 @@ const DailyRoutes = () => {
 
           {/* Noite */}
           <div className="bg-gradient-to-br from-zinc-900 to-black p-8 rounded-3xl border border-zinc-800 relative group hover:border-gold-400/30 transition-all">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span className="text-6xl">🌙</span>
+            <div className="absolute top-0 right-0 p-4 opacity-60 group-hover:opacity-100 transition-all duration-500">
+              <span className="text-6xl inline-block transition-transform group-hover:scale-110 duration-500">🌙</span>
             </div>
             <h4 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
               <span className="text-gold-400">02.</span> Período da Noite
